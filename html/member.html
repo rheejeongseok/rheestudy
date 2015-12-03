@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form action="member.html" method="get">
+
+    <fieldset> <!-- 이거하면 주위에 테두리쳐 -->
+        <legend>회원가입양식</legend> <!-- 음 주요 메뉴가댐 -->
+        <ul> <!-- label은 간단히 옷의 태그 같은느낌? id필요함 ㅇㅇ -->
+            <li><label for="uid">아이디 : </label><input type="text" id="uid" name="uid"></li>
+            <li><label for="upd">비밀번호 : </label><input type="password" id="upd" name="upd"></li>
+            <li><label for="umail">이메일 : </label><input type="text" id="umail" name="umail"></li>
+            <li><label for="woman">성별 : </label><input type="radio" name="ss" id="man">
+                        <label for="man">남자</label>
+                        <input type="radio" name="ss" id="woman">
+                        <label for="woman">여자</label>
+            </li>
+            <li><label for="3">취미 : </label><input type="checkbox" name="o1" id="1" checked="checked"><label for="1"> 저거</label>
+                        <input type="checkbox" name="o2" id="2"><label for="2"> 이거</label>
+                        <input type="checkbox" name="o3" id="3"><label for="3"> 요고</label>
+                        <input type="checkbox" name="o4" id="4"><label for="4"> 그거</label>
+            </li>
+            <li>첨부파일 : <input type="file"></li>
+            <input type="button" value="뒤로가기">
+            <input type="reset" value="다시쓰기">
+            <input type="submit" value="확인">
+        </ul>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+    <form action="member.html" method="get">
+    <ul>
+        <li>아이디 : <input type="text" name="uid"></li>
+        <li>비밀번호 : <input type="password" name="upd"></li>
+        <li>이메일 : <input type="text" name="umail"></li>
+        <li>성별 : <input type="radio" name="ss" checked="checked">남자
+                    <input type="radio" name="ss">여자
+        </li>
+        <li>취미 : <input type="checkbox" name="o1" checked="checked"> 저거
+                    <input type="checkbox" name="o2"> 이거
+                    <input type="checkbox" name="o3"> 요고
+                    <input type="checkbox" name="o4"> 그거
+        </li>
+        <li>첨부파일 : <input type="file"></li>
+        <input type="button" value="뒤로가기">
+        <input type="reset" value="다시쓰기">
+        <input type="submit" value="확인">
+    </ul>
+    </form>
+
+
+
+
+</body>
+</html> -->
