@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+        테이블 영역
+        thead : 테이블의 머릿글
+                - 필수 사항은 아님
+        tbody : 테이블의 컨텐츠
+
+        tfoot : 테이블의 합산정보
+                - 필수 사항은 아님
+                - tfoot의 위치는 thead와 tbody 사이
+        caption : 표의 제목부 h? 관련태그와는 의미가 다르다
+        summary : 현재 표의 자세한 설명
+        colgroup : 테이블 아이템 즉 열의 넓이에 대한 디자인 값을 넣을때 사용
+                    구성요소로는 빈태그 형식의 col을 사용
+                    col : 속성 style, width등을 사용하여 디자인 조절
+        colspan : 좌우열을 병합할때 사용, 값을 주면 해당수 만큼 td를 지워주자
+        rowspan : 상하열을 병합할때 사용, 값을 주면 해당수 만큼 td를 지워주자
+        음 만약 tbody, thead, tfoot등으로 나뉘었을때는 같은 블락 안에 있는 것들만 적용됨
+            -->
+
+
+        <table border="2" width="100%" summary="">
+             <caption>게씨판</caption> <!-- 캡션은 소제목정도? -->
+             <colgroup>
+                 <col width="100"/>
+                 <col width="300"/>
+                 <col />
+                 <col />
+             </colgroup>
+        <thead>
+            <tr>
+                <!-- colspan 값만큼 자리를 차지하는 개념?--> -->
+             <!-- <td colspan="2">head</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+            </tr> -->
+                <th scope="col">head</th>    <!-- colspan 값만큼 자리를 차지하는 개념?--> -->
+               <th scope="col">itemkkkkk</th>
+               <th scope="col">itemkkkkkk</th>
+               <th scope="col">itemkkkkkk</th>
+           </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">foot</th>
+                <td>foot</td>
+                <td>foot</td>
+                <td>foot</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">asdf</th>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+            </tr>
+            <tr>
+                <th scope="row">asdf</th>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+                <td>itemkkkkkkkkkkkkkkkkkkkk</td>
+            </tr>
+        </tbody>
+
+
+
+
+        </table>
+
+</body>
+</html>
