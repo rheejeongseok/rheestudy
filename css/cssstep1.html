@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>cssstep1</title>
+    <style type="text/css">
+
+
+
+
+        /*
+            css 기본문법
+            h1은 명령을 내리기위한 선택
+            {}섵갣된 엘리먼트 디자인적 요소를 정의
+            속성:값 형태로 정의
+        */
+
+        /*
+            id는 #으로 선택, id 값은 한 HTML문서 안에서 중복 X
+            class는 .으로 선택, class 값은 한 HTML문서 안에서 중복가능
+            선택시 첫글자로 제외 되는 사항 : 숫자, _ 와 - 를 제외한 특수문자
+
+            id는 '유일한 식별자'이고, class는 '분류 이름'
+
+            <Box model>
+
+            width 가로 넓이
+                min-width 최소 정해진 값이하로는 줄어들지 않는다.
+                max-width 최대 정해진 값이상으로 늘어나지 않는다.
+
+            height 세로 높이
+                min-height 최소 정해진 값이하로는 줄어들지 않는다. 컨텐츠가 많을시 계속 크기가 늘어난다.
+                max-height 최대 정해진 값이상으로 늘어나지 않는다. 컴텐츠가 많을시 컨텐츠가 박스를 넘어간다.
+
+            margin
+                ex>) margin:20px 20px 20px 20px - top right bottom left
+                     margin:20px 40px - 20px 40px 20px 40px 자동으로 값이 들어간다.
+                             top 값은 bottom으로 복사된다.
+                             right 값은 left값으로 복사된다.
+                     margin:0 auto - top 과 bottom은 0이되고 right와 left는 auto가 되어 자동적으로 값이 들어감.
+                margin-top
+                margin-right
+                margin-bottom
+                margin-left
+
+            padding
+                margin과 똑같음........
+                padding-top
+                padding-right
+                padding-bottom
+                padding-left
+
+            border 전체 둘레에 선의 색상 두께 종류를 선택해서 할수있다.
+                ex) border:1px red soild - 선두께 색상 선모양 (위치는 상관 없다고 합니다.)
+                border-top: top의 해당하는 부분에 선이 그어짐
+                border-right : right의 해당하는 부분에 선이 그어짐
+                border-bottom : bottom의 해당하는 부분에 선이 그어짐
+                border-left : left의 해당하는 부분에 선이 그어짐
+
+                border-width : 전체중 위아래좌우 부분적으로 두계를 설정가능
+                border-color : 전체중 위아래좌우 부분적으로 칼라를 설정가능
+                border-style : 전체중 위아래좌우 부분적으로 선모양을 설정가능
+        */
+
+        h1 {color:green; font-size:20px; border:1px blue solid;}
+        strong {color:pink; font-size:20px; border:2px red solid;}
+        #strong1 {color:purple;}
+
+        p {color:purple;}
+        .bluecolor {color:red;}
+
+        strong.bluecolor {color:blue;}
+        strong.greycolor {color:grey;}
+        p.bluecolor1 {color:blue;}
+        p.bluecolor {color:black;}
+
+    </style>
+</head>
+<body>
+
+    <h1>안녕하세요ㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛ</h1>
+    <strong id="strong1">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong><br>
+    <strong class="bluecolor">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong><br>
+    <strong class="greycolor">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong>
+
+    <p class="bluecolor1">우리는 취업을 해야합니다 제발요 시켜주세요 일주세요 잘할게요 화이팅!</p>
+    <p>우리는 취업을 해야합니다 제발요 시켜주세요 일주세요 잘할게요 화이팅!</p>
+    <p class="bluecolor">우리는 취업을 해야합니다 제발요 시켜주세요 일주세요 잘할게요 화이팅!</p>
+
+</body>
+</html>
