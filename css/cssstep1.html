@@ -60,6 +60,78 @@
                 border-width : 전체중 위아래좌우 부분적으로 두계를 설정가능
                 border-color : 전체중 위아래좌우 부분적으로 칼라를 설정가능
                 border-style : 전체중 위아래좌우 부분적으로 선모양을 설정가능
+
+            background
+
+                ex) background:url(../../오드리3.jpg) no-repeat 30px 50px fixed red
+                - 이미지불러오기, 반복X, x축 y축으로 이미지 위치 지정, attachment, 배경색상 순서상관X
+                - 모든 속성 한줄에 다 가능함
+                background-color : 색상을 지정해준다.(16진수,RGB(0,0,)가능) - 투명값 : transparent
+                background-image : 배경이미지 불러온다.
+                background-repeat : 배경이미지가 있는 경우 반복여부를 지정해준다.
+                                    - repeat : 바둑판식 배열
+                                    - no-repeat : 반복X
+                                    - repeat-y : y축으로 반복
+                                    - repeat-x : x축으로 반복
+                background-position
+                    ex)background-position:center center; - x,y값 모두 가운데로 left right bottom 응용가능
+                    ex)background-position: 50% 30%; - x축은 50%정도인 지점에, y축은 30%인 지점에 지정된다.
+                    ex)background-position: 50px 30px; - x축에서 50px만큼, y축에서 30px만큼인 지점에 지정된다.
+                background-attachment
+                    ex)background-attachment:fixed; - 화면에 사진이 고정되어 스크롤을 내려도 고정된다.
+
+
+                css3 - IE9이상
+                background-size
+                    브라우져 마다 다르므로 이렇게 쓰인다.
+                    -webkit-background-size: ; 크롬 사파리
+                    -moz-background-size: ; 파이어 폭스
+                    -o-background-size: ; 오페라
+                    -ms-background-size: ; 익스플로러
+                    background-size: ;
+                        - cover : 가로 기준비율로 이미지를 꽉차게
+                        - contain : 세로 기준비율로 이미지를 꽉차게
+
+
+                display
+                    block - width, height, margin, padding
+                    inline - margin-(left,right) padding, vertical-align
+                    inline-blcok - width, height, margin, padding
+                    table - width, height, margin, padding
+                    table-cell - width, height, margin, padding
+                    list-item
+
+
+                text-overflow
+                overflow - 기본 상태는 visible 주어진 영역을 벗어나게 되도 컨텐츠 내용이 보이는 상태
+                        hidden - 컨텐츠 내용이 주어진 영역을 벗어나게 되면 않보인다.
+                        scroll - 컨텐츠 내용이 주어진 영역을 벗어났게 되면 x,y축으로 스크롤을 만든다.
+                        auto - 컨텐츠 내용이 주어진 영역을 벗어났을 시 자동적으로 스크롤을 만들어 준다.
+                        ex)overflow:scroll; overflow-x:hidden
+                          - 오버플로우가 스크롤이지만 x축이 히든이므로 y축만 스크롤이 나온것처럼 보인다.
+                overflow-x
+                overflow-y
+
+                font
+                font-size - 글씨 크기 int (pt,px,em,rem,vw,vh,vmin,vmax)
+                font-weight - 글씨 두께 ( 0 ~ 900, bold)
+                font-family - 글꼴
+                font-style - 글씨 형태 ex)italic -> 일반
+
+                text-align - 좌우 정렬
+                vertical-align - 상하 정렬
+
+                white-space -
+                line-height - 줄간격
+                letter-spacing - 자간
+                word-wrap -
+                word-spacing - 스페이스바 간격
+                word-break
+                color - 글씨 색상
+
+                float - 공중에 뜬다, 형제 요소중에 float이 선언된 아래 요소는 겹쳐진다.
+                      - float이 선언된 엘리먼트는 다른컨텐츠들이 피해간다.
+
         */
 
         h1 {color:green; font-size:20px; border:1px blue solid;}
@@ -69,7 +141,7 @@
         p {color:purple;}
         .bluecolor {color:red;}
 
-        strong.bluecolor {color:blue;}
+        strong.greencolor {color:grey;}
         strong.greycolor {color:grey;}
         p.bluecolor1 {color:blue;}
         p.bluecolor {color:black;}
@@ -80,7 +152,7 @@
 
     <h1>안녕하세요ㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛㅛ</h1>
     <strong id="strong1">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong><br>
-    <strong class="bluecolor">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong><br>
+    <strong class="bluecolor bluecolor greencolor">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong><br>
     <strong class="greycolor">배가고프다ㅏㅏㅏㅏㅏㅏㅏㅏㅏ</strong>
 
     <p class="bluecolor1">우리는 취업을 해야합니다 제발요 시켜주세요 일주세요 잘할게요 화이팅!</p>
